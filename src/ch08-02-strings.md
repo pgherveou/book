@@ -161,7 +161,7 @@ when we use the `+` operator. The `+` operator uses the `add` method, whose
 signature looks something like this:
 
 ```rust,ignore
-fn add(self, s: &str) -> String {
+fn add(mut self, s: &str) -> String {
 ```
 
 This isn’t the exact signature that’s in the standard library: in the standard
